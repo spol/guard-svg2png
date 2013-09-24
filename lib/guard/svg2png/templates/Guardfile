@@ -1,0 +1,3 @@
+guard :svg2png do
+    watch(%r{^(.+)\.svg$})
+end
