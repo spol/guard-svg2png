@@ -99,7 +99,7 @@ module Guard
         paths.each do |path|
             UI.info "Removing PNG for deleted SVG file: #{path}"
             dest = get_destination(path)
-            File.delete(dest)
+            File.delete(dest) if File.exists?(dest)
         end
     end
 
@@ -114,7 +114,7 @@ module Guard
                     source = path
                     dest = get_destination(path)
                     UI.info "Rendering #{source} to #{dest}"
-                    command = build_command(path)
+                    command = build_command(source,dest)
                     UI.debug command
                     system command
                 else
