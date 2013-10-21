@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "guard-svg2png"
-  spec.version       = "0.0.1"
+  spec.version       = "0.0.2"
   spec.authors       = ["Seb Pollard"]
   spec.email         = ["seb.p@haygarth.co.uk"]
   spec.description   = %q{Converts SVG files to PNGs (For IE8)}
