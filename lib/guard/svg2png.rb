@@ -128,7 +128,7 @@ module Guard
 
     def build_command(source, dest)
 
-        command = "convert -background none #{source} #{dest}"
+        command = "convert -background none \"#{source}\" \"#{dest}\""
     end
 
     def get_destination(path)
